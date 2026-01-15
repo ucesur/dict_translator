@@ -1,6 +1,13 @@
 import axios from "axios";
 import { getCache, setCache } from "./_cache.js";
 
+export default function handler(req, res) {
+  res.status(200).json({
+    status: "ok",
+    time: new Date().toISOString()
+  });
+}
+/*
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
@@ -76,4 +83,4 @@ Return JSON only.
       error: "Translation failed"
     });
   }
-}
+}*/
