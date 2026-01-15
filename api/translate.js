@@ -18,7 +18,7 @@ module.exports = async function (req, res) {
     const { text } = req.body;
     if (!text) return res.status(400).json({ error: "Missing text" });
 
-    if (!process.env.OPENAI_API_KEY) {
+    if (!process.env.CLIENT_DICT_TRA) {
       return res.status(500).json({ error: "CLIENT_DICT_TRA missing" });
     }
 
