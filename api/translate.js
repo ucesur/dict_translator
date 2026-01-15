@@ -5,6 +5,18 @@ import axios from "axios";
 
 export default async function handler(req, res) {
   try {
+    return res.status(200).json({
+      ok: true,
+      message: "translate endpoint works"
+    });
+  } catch (e) {
+    return res.status(500).json({ error: e.message });
+  }
+}
+
+/*
+export default async function handler(req, res) {
+  try {
     const response = await axios.post(
       "https://api.openai.com/v1/chat/completions",
       {
@@ -32,5 +44,5 @@ export default async function handler(req, res) {
       error: err.message
     });
   }
-}
+}*/
 
