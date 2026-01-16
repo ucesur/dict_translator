@@ -21,6 +21,7 @@ Terminology rules (MANDATORY):
 
 Rules:
 - Use TV UI friendly short sentences
+- Be more polite, for example eng: Reduce Blue Light tr: Mavi Işığı Azaltın
 - Do NOT translate industry terms unnecessarily
 - Keep system message tone consistent
 - Translate ONLY, do not add comments
